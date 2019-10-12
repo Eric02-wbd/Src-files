@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Eric-Practice</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .nav{
+        height: 70px;
+        border-bottom: 10px solid pink;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right-items {
+        display: flex;
+        margin-left: auto;
+      }
+
+      .nav-item {
+        margin-left: 5px;
+        margin-right: 5px;
+        //Originally that was just margin-left: 10px
+      }
+
+      .company-name {
+        font-size: 1.25rem;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+
+      .main {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+      }
+
+      .content {
+        display: flex;
+        //margin-left: 10px;
+        //margin-right: 10px;
+      }
+
+      .content-item {
+        width: 300px;
+        height: 350px;
+        border: 3px solid skyblue;
+        margin: 20px;
+        border-radius: 10px;
+        text-align: center;
+        //display: flex;
+        //margin-left: 10px;
+        //margin-right: 10px;
+      }
+
+      .content-item-title {
+        font-size: 1.5rem;
+        background: rgba(0,0,0,.03);
+        border-bottom: 1px solid skyblue;
+        height: 53px;
+        line-height: 53px;
+      }
+
+      .content-item-price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 20px;
+      }
+
+      .content-item-button {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        color: #007bff;
+        background-color: transparent;
+        background-image: none;
+        border-color: #007bff;
+        margin-top: 30px;
+      }
+      
+      .content-item-button--active {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .content-item-month {
+        font-size: 16px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav"> 
+      <div class="company-name">
+        Eric Lee
+      </div>
+      <div class="nav-right-items">
+        <a href="https://www.naver.com" target="blank" title="naver">
+        <img src="Images/naver.jpg" />
+        </a>
+
+        <a href="https://www.snapchat.com" target="blank" title="Snapchat">
+        <img src="Images/Snapchat.PNG" />
+        </a>
+
+        <a href="https://www.instagram.com" target="blank" title="Instagram">
+        <img src="Images/Instagram.PNG" />
+        </a>
+
+        <span>
+          <a href="https://www.facebook.com" target="blank" title="facebook">
+        <img src="Images/Facebook.PNG" />
+          </a>
+        </span>  
+      </div>
+      
+    </div>
+
+    <div class="main">
+      <div class="title">
+        Welcome to my world!
+      </div>
+
+      <div class="subtitle">
+      Hola! Welcome to my website!
+      I'm really happy to be with you at this website.
+      Come out and play with me!!!
+      </div>
+
+      <div class="content">
+        <div class="content-item">
+          <div class="content-item-title">
+            Free
+          </div>
+          <div class="content-item-price">
+            $0 <span class="content-item-month"> /mo</span>
+          </div>  
+          <div class="content-item-detail">
+            It's for learner!
+          </div>
+          <div class="content-item-detail">
+            If you want to
+          </div>
+          <div class="content-item-detail">
+            Learn how to
+          </div>
+          <div class="content-item-detail">
+            Play Game
+          </div>
+          <button class="content-item-button">
+            Click here
+          </button>
+        </div>
+        <div class="content-item">    
+          <div class="content-item-title">
+            Pro
+          </div>
+          <div class="content-item-price">
+            $15 <span class="content-item-month"> /mo</span>
+          </div>  
+          
+          <div class="content-item-detail">
+            It's for Pro
+          </div>
+          <div class="content-item-detail">
+            If you wnat to
+          </div>
+          <div class="content-item-detail">
+            Teach someone
+          </div>
+          <div class="content-item-detail">
+            or learn something
+          </div>
+          <button class="content-item-button content-item-button--active">
+            Click here
+          </button>
+        </div>
+        <div class="content-item">  
+          <div class="content-item-title">
+            Enterprise
+          </div>
+          <div class="content-item-price">
+            $30 <span class="content-item-month"> /mo</span>
+          </div>  
+          
+          <div class="content-item-detail">
+            It's for enterprise
+          </div>
+          <div class="content-item-detail">
+            If you want to
+          </div>
+          <div class="content-item-detail">
+            cooperate with us
+          </div>
+          <div class="content-item-detail">
+            and make something
+          </div>
+          <button class="content-item-button content-item-button--active">
+            Click here
+          </button>
+        </div>  
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
